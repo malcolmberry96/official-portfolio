@@ -1,4 +1,6 @@
-# Offician Portfolio
+# Official Portfolio
 
-Portfolio made with Material Design Bootstrap with some help from MD Bootstrap 
+Portfolio made with Material Design Bootstrap with some help from MD Bootstrap. 
+
+Contact me and lets build!
 
