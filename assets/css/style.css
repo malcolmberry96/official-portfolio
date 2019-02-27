@@ -1,0 +1,24 @@
+body {
+    background: url("../images/") repeat;
+}
+
+.designer .mask.rgba-gradient {
+    background: -webkit-linear-gradient(45deg,rgba(174, 175,178,1),rgba(224,225,225,1) 100%);
+
+.portfolio-img {
+    height: 175px;
+    width: 175px;
+}
+
+.project-img {
+margin: auto;
+}
+
+.project-wrapper {
+height: 70%;
+width: 100%
+}
+
+.display-3 {
+    font-family: 'Overpass', sans-serif;
+}

@@ -2,134 +2,1126 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+
+	<title>Malcolm Berry - Full-Stack Developer</title>
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Malcolm Berry - Portfolio" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="Malcolm Berry Portfolio" />
+	<meta property="og:image" content="./assets/images/landing.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Portfolio page for Malcolm Berry." />
+
+	<meta name="twitter:title" content="Malcolm Berry - Portfolio" />
+	<meta name="twitter:image" content="./assets/images/landing.png" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+	<!-- Bootstrap core CSS -->
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="./assets/css/mdb.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<!-- Paralaxx effect -->
+	<style>
+		html,
+			body,
+			header,
+			.jarallax {
+			  height: 100%;
+			}
+			@media (min-width: 800px) and (max-width: 850px) {
+				.navbar:not(.top-nav-collapse) {
+					background: #222!important;
+				}
+				.navbar {
+				  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12) !important;
+				}
+			}
+		  </style>
 </head>
 
-<body>
-<!--Main Navigation-->
+<body class="designer">
+	<!--Navigation & Intro-->
+	<header>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+			<div class="container-fluid">
 
-<header>
-<!-- Main navigation -->
-<header>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto smooth-scroll">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" data-offset="90">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features" data-offset="90">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services" data-offset="90">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#opinions" data-offset="30">Opinions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team" data-offset="90">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
-          </li>
-        </ul>
-        <!-- Social Icon  -->
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link">
-              <i class="fab fa-facebook-f light-green-text-2"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              <i class="fab fa-twitter light-green-text-2"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              <i class="fab fa-instagram light-green-text-2"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar -->
-  <!-- Full Page Intro -->
-  <div class="view">
-    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
-      <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
-    </video>
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
-      <!-- Content -->
-      <div class="container px-md-3 px-sm-0">
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-          <!--Grid column-->
-          <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
-            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Creative Agency</h3>
-            <hr class="hr-light my-4 w-75">
-            <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
-            <a href="#!" class="btn btn-rounded btn-outline-white">
-              <i class="fas fa-home "></i> Visit us
-            </a>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Content -->
-    </div>
-    <!-- Mask & flexbox options-->
-  </div>
-  <!-- Full Page Intro -->
-</header>
-</header>
-<!--Main Navigation-->
 
-<!--Main layout-->
-<main>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+				 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-</main>
-<!--Main layout-->
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav mr-auto smooth-scroll">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about" data-offset="100">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills" data-offset="90">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#recent" data-offset="90">Recent Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio" data-offset="90">Portfolio</a>
+						</li>
+					</ul>
+					<!-- Social Icon  -->
+					<ul class="navbar-nav nav-flex-icons">
+						<li>
+							<a target="_blank" href="mailto:malcolm.berry65@gmail.com" class="btn btn-secondary btn-sm">
+								<i class="fa fa-envelope pr-2"></i>Email Me</a>
+							<a href="" target="_blank" class="btn btn-sm btn-danger">
+								<i class="far fa-file pr-2"></i>View Resume</a>
+							<a href="https://github.com/malcolmberry96" target="_blank" class="btn btn-sm btn-secondary">
+								<i class="fab fa-github pr-2"></i>Github</a>
+							<a href="https://www.linkedin.com/in/malcolmberry96/" target="_blank" class="btn btn-sm btn-danger">
+								<i class="fab fa-linkedin pr-2"></i>LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-<!--Footer-->
-<footer>
+		<!-- Intro Section -->
+		<div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			<div class="mask rgba-gradient">
+				<div class="container h-100 d-flex justify-content-center align-items-center">
+					<div class="row smooth-scroll">
+						<div class="col-md-12">
+							<div class="wow fadeInUp text-center">
+								<h2 class="display-3 font-weight-bold white-text mb-3">Malcolm Berry</h2>
+								<h4 class="text-uppercase font-weight-bold white-text">Full Stack Developer</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--/Navigation & Intro-->
 
-</footer>
-<!--Footer-->
+	<!--Main layout-->
+	<main>
+		<!-- Section About -->
+		<div class="container mt-3">
+			<section id="about" class="section mt-1 mb-3">
+				<!--Secion heading-->
+				<h2 class="text-uppercase text-center font-weight-bold my-4 pt-5 wow fadeIn" data-wow-delay="0.2s">About me</h2>
+				<hr class="between-sections">
+				<div class="row pt-5">
+					<!-- First row -->
 
- 
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.js"></script>
+					<div class="col-lg-5 col-md-12 wow fadeIn" data-wow-delay="0.4s">
+						<!--First column-->
+
+						<div class="d-flex justify-content-start">
+							<h3 class="text-center text-uppercase mb-3 wow fadeIn" data-wow-delay="0.2s">Malcolm Berry</h3>
+						</div>
+
+						<h5 class="mb-3 justify">
+							<!--Description-->
+							I'm a full-stack developer and recent graduate of the University of Texas at Austin. 
+							I am an voracious learner, and always looking for a new challenge <br><br>
+
+							My love for computers began at a young age and fully blossomed when I began taking courses 
+							in the computer science department of my university. Over the past year I have been developing 
+							beautiful applications, while still finding time to further explore the world of data. <br><br>
+
+							If you would like to connect, please contact me via email.</h5>
+					
+				</div>
+				<!--/First column-->
+
+				<!--Second column-->
+				<div class="col-lg-6 offset-lg-1 col-md-12 mb-5 wow fadeIn" data-wow-delay="0.4s">
+					<!--Second headind-->
+					<div class="justify-content-start">
+						<img src="./assets/images/1.png" class="img-fluid mb-3 z-depth-1-half" alt="">
+					</div>
+					<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+					 aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+
+
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="row">
+									<div class="col-md-8">
+										<div class="modal-body mx-3">
+											<div class="md-form mb-5">
+												<i class="fas fa-user prefix grey-text"></i>
+												<input type="text" id="form34" class="form-control validate">
+												<label data-error="wrong" data-success="right" for="form34">Your name</label>
+											</div>
+
+											<div class="md-form mb-5">
+												<i class="fas fa-envelope prefix grey-text"></i>
+												<input type="email" id="form29" class="form-control validate">
+												<label data-error="wrong" data-success="right" for="form29">Your email</label>
+											</div>
+
+											<div class="md-form mb-5">
+												<i class="fas fa-tag prefix grey-text"></i>
+												<input type="text" id="form32" class="form-control validate">
+												<label data-error="wrong" data-success="right" for="form32">Subject</label>
+											</div>
+
+											<div class="md-form">
+												<i class="fas fa-pencil prefix grey-text"></i>
+												<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+												<label data-error="wrong" data-success="right" for="form8">Your message</label>
+											</div>
+
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-body contact h-100">
+
+											<div class="avatar mx-auto d-flex">
+												<img src="" class="rounded z-depth-1-half"
+												 alt="Sample avatar">
+											</div>
+											<ul class="text-lg-left list-unstyled mt-4">
+												<li>
+													<p><i class="fa fa-map-marker"></i> Houston, TX, USA</p>
+												</li>
+												<li>
+													<p><i class="fa fa-phone"></i> Phone # per request </p>
+												</li>
+												<li>
+													<a target="_blank" href="mailto:malcolm.berry65@gmail.com">
+														<p><i class="fa fa-envelope"></i> malcolm.berry650@gmail.com</p>
+													</a>
+												</li>
+											</ul>
+											<hr class="hr-light my-4">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer d-flex justify-content-center">
+									<button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+						<div class="text-center">
+							<a target="_blank" href="mailto:malcolm.berry65@gmail.com" class="btn btn-secondary mb-4" d><i class="fa fa-envelope fa-2x pr-2"></i>
+								Email Me</a>
+							<a href="" target="_blank" class="btn btn-danger mb-4"><i class="far fa-file fa-2x pr-2"></i>
+								View Resume</a>
+						</div>
+					</div>
+					<!--/Second column-->
+					
+				</div>
+				<!--/First row-->
+			</section>
+			<!-- /.Section About -->
+		</div>
+		<!-- /.First container -->
+		<!-- Second container -->
+		<div id="skills" class="container mb-5">
+			<!--Secion heading-->
+			<h2 class="text-uppercase text-center font-weight-bold my-4 pt-5 wow fadeIn" data-wow-delay="0.2s">Tech
+				Skills</h2>
+
+			<hr class="between-sections pb-5">
+			<!--First row-->
+			<div class="row  wow fadeIn" data-wow-delay="0.2s">
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/html.png">
+						</div>
+						<br>
+						<strong>HTML5</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/css.png">
+						</div>
+						<br>
+						<strong>CSS</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/js.png">
+						</div>
+						<br>
+						<strong>JAVASCRIPT</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/jquery.png">
+						</div>
+						<br>
+						<strong>JQUERY</strong>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<!--/First row-->
+			<!-- Second Row  -->
+			<div class="row  wow fadeIn" data-wow-delay="0.2s">
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/bootstrap.png">
+						</div>
+						<br>
+						<strong>BOOTSTRAP</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/node.png">
+						</div>
+						<br>
+						<strong>NODE.JS</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/R_logo.png">
+						</div>
+						<br>
+						<strong>R</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/react.png">
+						</div>
+						<br>
+						<strong>REACT</strong>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<!-- Second Row -->
+			<!--/First row-->
+			<div class="row  wow fadeIn" data-wow-delay="0.2s">
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/mysql.png">
+						</div>
+						<br>
+						<strong>MySQL</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/mongodb.png">
+						</div>
+						<br>
+						<strong>MONGODB</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/git.png">
+						</div>
+						<br>
+						<strong>GIT</strong>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center mt-1">
+					<div class="icon-area">
+						<div class="circle-icon">
+							<img class="img-fluid portfolio-img" src="assets/images/skills/redux.png">
+						</div>
+						<br>
+						<strong>REDUX</strong>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Second container -->
+
+		<!-- Section: Blog v.1 -->
+		<section id="recent" class="my-5">
+			<div class="smooth-scroll container-fluid">`
+
+				<!-- Section heading -->
+				<h2 class="h1-responsive font-weight-bold text-center my-5">Projects</h2>
+				<!-- Section description -->
+				<p class="text-center w-responsive mx-auto mb-5">Some of my most recent projects. Click <a href="#portfolio">here</a>
+					to see the rest of my work</p>
+
+				<!-- Grid row -->
+				<div class="row">
+
+					<!-- Grid column -->
+					<div class="col-lg-5">
+
+						<!-- Featured image -->
+						<div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+							<img class="img-fluid" src="./assets/images/portfolio/pick-up.png" alt="Sample image">
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-lg-7">
+						<!-- Post title -->
+						<h3 class="font-weight-bold mb-3"><strong>Pick-UP</strong></h3>
+						<!-- Excerpt -->
+						<p>Pick-UP is a full-stack MERN application developed by myself and another developer. Essentially, it is a software as service 
+							application meant to allow hot-shot drivers the ability to connect with customers on demand. It incorporates the 
+							Google Maps API so that users can track the status of their shipments in real time. While still a work in progress,
+							I consider this project one of my flagships as it challenges both my skills as an analyst and developer. .</p>
+					
+						<!-- Read more button -->
+						<a href="https://github.com/malcolmberry96/pick-up" target="_blank" class="btn btn-success btn-md">View Repository</a>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+
+				<hr class="my-5">
+
+				<!-- Grid row -->
+				<div class="row">
+
+					<!-- Grid column -->
+					<div class="col-lg-7">
+						<!-- Post title -->
+						<h3 class="font-weight-bold mb-3"><strong>Google Books Search (MERN Stack)</strong></h3>
+						<!-- Excerpt -->
+						<p>MERN stack application that allows users to search books using the Google Books API.</p>
+						<!-- Post data -->
+						<p>Tools: React, Express, MongoDB, Node.js</p>
+						<!-- Read more button -->
+						<a href="https://fathomless-basin-73066.herokuapp.com/" target="_blank" class="btn btn-pink btn-md mb-lg-0 mb-4">Live
+							Link</a>
+
+						<a href="https://github.com/malcolmberry96/googleBooks" target="_blank" class="btn btn-pink btn-md mb-lg-0 mb-4">Repository</a>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-lg-5">
+
+						<!-- Featured image -->
+						<div class="view overlay rounded z-depth-2">
+							<img class="img-fluid" src="./assets/images/portfolio/GoogleBooks.png" alt="Sample image">
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+
+				<hr class="my-5">
+
+				<!-- Grid row -->
+				<div class="row">
+
+					<!-- Grid column -->
+					<div class="col-lg-5">
+
+						<!-- Featured image -->
+						<div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+							<img class="img-fluid" src="./assets/images/portfolio/dbz.png" alt="Sample image">
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-lg-7">
+						<!-- Post title -->
+						<h3 class="font-weight-bold mb-3"><strong>Dragon Ball Z Trivia</strong></h3>
+						<!-- Excerpt -->
+						<p>Web app trivia game based on my favorite TV show and arguably the best anime of all time Dragon Ball Z. 
+							I built this application as a fun way to play around with my javascript skills. Click the link and test your knowledge!
+						</p>
+						<!-- Post data -->
+						<p>Tools used: HTML, CSS, Javascript and jQuery</p>
+						<!-- Read more button -->
+						<a href="https://malcolmberry96.github.io/trivia-app/" target="_blank" class="btn btn-indigo btn-md">Live Link</a>
+
+						<a href="https://github.com/malcolmberry96/trivia-app" target="_blank" class="btn btn-indigo btn-md">Repository</a>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+
+				<hr class="my-5">
+
+				<!-- Grid row -->
+				<div class="row">
+
+					<!-- Grid column -->
+					<div class="col-lg-7">
+						<!-- Post title -->
+						<h3 class="font-weight-bold mb-3"><strong>Burger SQL</strong></h3>
+						<!-- Excerpt -->
+						<p>Full stack web application in which users are the proprietors of their own burger restaurant. Create your own burger and eat it. 
+							This application utilizes a MySQL database with no ORM. 
+							 </p>
+						<!-- Post data -->
+						<p>Technologies used: HTML, CSS, Twitter Bootstrap, Javascript, Heroku, Node.js, MySQL, JawsDB (AWS), Express.js</p>
+
+					
+						<!-- Read more button -->
+						<a href="https://fathomless-thicket-73340.herokuapp.com/" target="_blank" class="btn btn-pink btn-md mb-lg-0 mb-4">Live Link</a>
+
+						<a href="https://github.com/malcolmberry96/burger" target="_blank" class="btn btn-pink btn-md mb-lg-0 mb-4">Repository</a>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-lg-5">
+
+						<!-- Featured image -->
+						<div class="view overlay rounded z-depth-2">
+							<img class="img-fluid" width="100%" src="./assets/images/portfolio/burger.png"
+							 alt="Sample image">
+
+							<div class="mask rgba-white-slight"></div>
+
+						</div>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+				<hr class="my-5">
+
+				<!-- Grid row -->
+				<div class="row">
+
+					<!-- Grid column -->
+					<div class="col-lg-5">
+
+						<!-- Featured image -->
+						<div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
+							<img class="img-fluid" src="./assets/images/portfolio/foklift.png" alt="Sample image">
+							<a>
+								<div class="mask rgba-white-slight"></div>
+							</a>
+						</div>
+
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-lg-7">
+						<!-- Post title -->
+						<h3 class="font-weight-bold mb-3"><strong>PACER TMS</strong></h3>
+						<!-- Excerpt -->
+						<p>Full-stack project that is an essentially a Transport Management System intended for the raw materials sector that allows
+							companies to manage materials from the warehouse to the office. Managers can create positions, 
+							office clerks can manage materials, and fork-lift/ground operations can input specs from the ground floor. 
+							This application features a user authentication system that encrypts passwords for security. 
+						</p>
+						<!-- Post data -->
+						<p>Technologies used: HTML, CSS, Material Design Bootstrap, Javascript, Heroku, Node.js, MySQL, Sequelize, Passport.js </p>
+
+							
+						<!-- Read more button -->
+						<a href="https://hidden-savannah-49813.herokuapp.com/" target="_blank" class="btn btn-indigo btn-md">Live Link</a>
+
+						<a href="https://github.com/nyramirez/Project2" target="_blank" class="btn btn-indigo btn-md">Repository</a>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row -->
+			</div>
+		</section>
+		<!-- Section: Blog v.1 -->
+
+		<!--Projects section v.2-->
+		<section id="portfolio" class="section mt-2 pb-5 mb-4">
+			<!-- Classic tabs -->
+			<div class="classic-tabs">
+
+				<ul class="nav tabs-black justify-content-center" id="myClassicTabOrange" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link  waves-light active show" id="profile-tab-classic-orange" data-toggle="tab" href="#profile-classic-orange"
+						 role="tab" aria-controls="profile-classic-orange" aria-selected="true"><i class="fas fa-sitemap fa-2x pb-2"
+							 aria-hidden="true"></i><br>Front-End</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light" id="contact-tab-classic-orange" data-toggle="tab" href="#contact-classic-orange"
+						 role="tab" aria-controls="contact-classic-orange" aria-selected="false"><i class="fas fa-server fa-2x pb-2"
+							 aria-hidden="true"></i><br>Back-End</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light" id="awesome-tab-classic-orange" data-toggle="tab" href="#awesome-classic-orange"
+						 role="tab" aria-controls="awesome-classic-orange" aria-selected="false"><i class="fas fa-code-branch fa-2x pb-2"
+							 aria-hidden="true"></i><br>Full-Stack</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-light" id="react-tab-classic-orange" data-toggle="tab" href="#react-classic-orange" role="tab"
+						 aria-controls="react-classic-orange" aria-selected="false"><i class="fab fa-react fa-2x pb-2" aria-hidden="true"></i><br>React</a>
+					</li>
+				</ul>
+
+				<div class="tab-content card" id="myClassicTabContentOrange">
+					<div class="tab-pane fade active show" id="profile-classic-orange" role="tabpanel" aria-labelledby="profile-tab-classic-orange">
+						<div class="container">
+							<!-- Section heading -->
+							<h2 class="h1-responsive text-center font-weight-bold">Front-End</h2>
+							<p class="grey-text text-center mb-3">Front-End Examples</p>
+
+							<!-- Grid row -->
+							<div class="row text-center">
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/wordguess.png" class="img-fluid" alt="Sample project image">
+										<a href="https://malcolmberry96.github.io/Word-Guess-Game.io/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Whip Word Guess</h4>
+										<p class="grey-text">JavaScript hangman based on the makes and models of pouplar cars
+										</p>
+									</div>
+									<div>
+										<a href="https://malcolmberry96.github.io/Word-Guess-Game.io/" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i> Live Link</a>
+										<a href="https://github.com/malcolmberry96/Word-Guess-Game.io" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-code left"></i> Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-md-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/crystal.png" class="img-fluid" alt="Sample project image">
+										<a href="https://malcolmberry96.github.io/crystal-counter/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Steven Universe Crystal Collector</h4>
+										<p class="grey-text">Crystal counter where each crystal has a random value and users try to match the number.</p>
+									</div>
+									<div>
+										<a href="https://malcolmberry96.github.io/crystal-counter/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/crystal-counter" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-code left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/rock-paper-scissors.png" class="img-fluid" alt="Sample project image">
+										<a href="" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Rock Paper Scissors</h4>
+										<p class="grey-text">Classic Rock Paper Scissors with a clean, modern design.</p>
+									</div>
+									<div>
+										<a href="" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i> Live Link</a>
+										<a href="" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-code left"></i> Repository</a>
+									</div>
+								</div>
+							</div>
+
+							<!-- Grid row -->
+							<div class="row mt-4 text-center">
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/basketball.png" class="img-fluid" alt="Sample project image">
+										<a href="https://github.com/malcolmberry96/basketball-api" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Basketball GIPHY Search</h4>
+										<p class="grey-text">Basketball themed gif search engine using AJAX and API calls via the GIPHY API.
+										</p>
+									</div>
+									<div>
+										<a href="https://malcolmberry96.github.io/basketball-api/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/basketball-api" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-md-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/dbz2.png" class="img-fluid" alt="Sample project image">
+										<a href="https://malcolmberry96.github.io/trivia-app/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">DBZ Trivia Game</h4>
+										<p class="grey-text">Test your trivia knowledge on this game based on DBZ</p>
+									</div>
+									<div>
+										<a href="https://malcolmberry96.github.io/trivia-app/" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i> Live Link </a>
+										<a href="https://github.com/malcolmberry96/trivia-app" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i> Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/train.png" class="img-fluid" alt="Sample project image">
+										<a href="https://malcolmberry96.github.io/train-schedule/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Train Scheduler</h4>
+										<p class="grey-text">Time scheduling application. Can be adapted to anything but right now its used for trains. Updated in realtime with Google Firebase</p>
+									</div>
+									<div>
+										<a href="https://malcolmberry96.github.io/train-schedule/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/train-schedule" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Repository</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Grid column -->
+					</div>
+
+					<div class="tab-pane fade" id="contact-classic-orange" role="tabpanel" aria-labelledby="contact-tab-classic-orange">
+						<div class="container">
+							<!-- Section heading -->
+							<h2 class="h1-responsive text-center font-weight-bold">Back-End</h2>
+							<!-- Section description -->
+							<p class="grey-text text-center mb-3">Back-End focused applications built with the intentions of real-world use.</p>
+
+							<!-- Grid row -->
+							<div class="row text-center">
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/concert2.png" class="img-fluid" alt="LIRI Bot Image">
+										<a href="" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Concert Live</h4>
+										<p class="grey-text">Application that allows users to listen to their favorite music on demand and possibly buy tickets.</p>
+									</div>
+									<div>
+										<a href="https://joshehenry.github.io/Project-1/ " target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/joshehenry/Project-1" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-code left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-md-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/pacer3.png" class="img-fluid" alt="Sample project image">
+										<a href="https://hidden-savannah-49813.herokuapp.com/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">PACER</h4>
+										<p class="grey-text">Transport Management System intended for the purpose of managing raw materials.</p>
+									</div>
+									<div>
+										<a href="https://hidden-savannah-49813.herokuapp.com/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/nyramirez/Project2" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-code left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/burger.png" class="img-fluid" alt="Sample project image">
+										<a href="https://fathomless-thicket-73340.herokuapp.com/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Burger SQL</h4>
+										<p class="grey-text">Create and Devour burgers. Created as a MySQL/web application practice for me. </p>
+									</div>
+									<div>
+										<a href="https://fathomless-thicket-73340.herokuapp.com/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/burger" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-code left"></i> Repository</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="awesome-classic-orange" role="tabpanel" aria-labelledby="awesome-tab-classic-orange">
+						<div class="container">
+							<!-- Section heading -->
+							<h2 class="h1-responsive text-center font-weight-bold">Full-Stack</h2>
+							<!-- Section description -->
+							<p class="grey-text text-center mb-3">Full-stack web applications.</p>
+
+							<!-- Grid row -->
+							<div class="row text-center">
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/scrapper.png" class="img-fluid" alt="LIRI Bot Image">
+										<a href="https://scrapper96.herokuapp.com/articles" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">The Verge Scrapper</h4>
+										<p class="grey-text">Scrapper that scrapes news from theverge.com. Allows users to make a post, which is 
+											stored permanently on a database.
+										</p>
+									</div>
+									<div>
+										<a href="https://scrapper96.herokuapp.com/articles" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/scrapper" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-code left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-md-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/friends.png" class="img-fluid" alt="Sample project image">
+										<a href="https://friend-finder323.herokuapp.com/survey" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Friend Finder</h4>
+										<p class="grey-text">Survey application to help users find friends with similar interests.</p>
+									</div>
+									<div>
+										<a href="https://friend-finder323.herokuapp.com/survey" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/friend-finder" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-code left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/pacer3.png"
+										 class="img-fluid" alt="Sample project image">
+										<a href="https://hidden-savannah-49813.herokuapp.com/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Pacer</h4>
+										<p class="grey-text">Transport Management System intended for the purpose of managing raw materials.</p>
+									</div>
+									<div>
+										<a href="https://hidden-savannah-49813.herokuapp.com/" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i>
+											View application</a>
+										<a href="https://github.com/nyramirez/Project2" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-code left"></i> View code</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				-->
+
+					<div class="tab-pane fade" id="react-classic-orange" role="tabpanel" aria-labelledby="react-tab-classic-orange">
+						<div class="container">
+							<!-- Section heading -->
+							<h2 class="h1-responsive text-center font-weight-bold">React</h2>
+							<!-- Section description -->
+							<p class="grey-text text-center mb-3">Applications built with React.js</p>
+
+							<!-- Grid row -->
+							<div class="row text-center">
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/pick-up.png" class="img-fluid" alt="Sample project image">
+										<a href="https://pickup2.herokuapp.com/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Pick-Up</h4>
+										<p class="grey-text">Uber for your pick-up truck/delivery needs. All screens built with React.js.</p>
+									</div>
+									<div>
+										<a href="https://pickup2.herokuapp.com/" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-clone left"></i> Live Link</a>
+										<a href="https://github.com/malcolmberry96/pick-up " target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-code left"></i>
+											Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12 mb-md-0 mb-4">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/GoogleBooks.png" class="img-fluid" alt="Sample project image">
+										<a href="https://fathomless-basin-73066.herokuapp.com/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Google Books Search</h4>
+										<p class="grey-text">Search books and read a synopsis. </p>
+									</div>
+									<div>
+										<a href="https://fathomless-basin-73066.herokuapp.com/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="Repository" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-code left"></i> Repository</a>
+									</div>
+								</div>
+								<!-- Grid column -->
+
+								<!-- Grid column -->
+								<div class="col-lg-4 col-md-12">
+									<!--Featured image-->
+									<div class="view overlay rounded z-depth-1">
+										<img src="./assets/images/portfolio/hype.png" class="img-fluid" alt="Sample project image">
+										<a href="https://fierce-wildwood-63793.herokuapp.com/" target="_blank">
+											<div class="mask rgba-white-slight"></div>
+										</a>
+									</div>
+									<!--Excerpt-->
+									<div class="card-body pb-0">
+										<h4 class="font-weight-bold my-3">Hype Memory</h4>
+										<p class="grey-text">Memory click game using React components and states with a hypebeast culture theme.
+										</p>
+									</div>
+									<div>
+										<a href="https://fierce-wildwood-63793.herokuapp.com/" target="_blank" class="btn btn-indigo btn-sm"><i class="fas fa-clone left"></i>
+											Live Link</a>
+										<a href="https://github.com/malcolmberry96/react-click" target="_blank" class="btn btn-indigo btn-sm"><i
+											 class="fas fa-code left"></i> Repository</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Grid column -->
+					</div>
+
+
+				</div>
+
+			</div>
+			<!-- Classic tabs -->
+
+
+		</section>
+		<!--/Projects section v.2-->
+
+
+	</main>
+	<!--/Main layout-->
+	<!-- Scrollspy -->
+	<div class="dotted-scrollspy clearfix d-none d-sm-block">
+		<ul class="nav smooth-scroll flex-column">
+			<li class="nav-item"><a class="nav-link" href="#home"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#skills"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#recent"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#portfolio"><span></span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact"><span></span></a></li>
+		</ul>
+	</div>
+
+
+	<!--Footer-->
+	<footer class="page-footer text-center text-md-left mt-0">
+		<!--Footer Links-->
+		<div class="container mb-2">
+			<!--First row-->
+			<div class="row">
+				<!--First column-->
+				<div class="col-md-12 my-4 wow fadeIn" data-wow-delay="0.3s">
+
+					<div class="footer-socials mt-1 text-center">
+						<a target="_blank" href="mailto:malcolm.berry65@gmail.com" class="btn btn-secondary btn-sm"><i class="fa fa-envelope pr-2"></i>
+							Email Me</a>
+						<a href="" target="_blank" class="btn btn-sm btn-danger"><i class="far fa-file pr-2"></i>
+							View Resume</a>
+						<a href="https://github.com/malcolmberry96" target="_blank" class="btn btn-sm btn-secondary"><i class="fab fa-github pr-2"></i>
+							Github</a>
+						<a href="https://www.linkedin.com/in/malcolmberry96/" target="_blank" class="btn btn-sm btn-danger"><i class="fab fa-linkedin pr-2"></i>
+							LinkedIn</a>
+					</div>
+				</div>
+				<!--/First column-->
+			</div>
+			<!--/First row-->
+		</div>
+		<!--/Footer Links-->
+		<!--Copyright-->
+		<div class="footer-copyright py-3 text-center">
+			<div class="container-fluid">
+				Created with <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap © 2018</a>
+			</div>
+		</div>
+
+		<!-- SCRIPTS -->
+		<!-- JQuery -->
+		<script type="text/javascript" src="./assets/javascript/jquery-3.3.1.min.js"></script>
+
+		<!-- Tooltips -->
+		<script type="text/javascript" src="./assets/javascript/popper.min.js"></script>
+
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="./assets/javascript/bootstrap.min.js"></script>
+
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="./assets/javascript/mdb.min.js"></script>
+
+		<script>
+			//Animation init
+			new WOW().init();
+
+			// initialize scrollspy
+			$('body').scrollspy({
+				target: '.dotted-scrollspy'
+			});
+
+			// initialize lightbox
+			$(function () {
+				$("#mdb-lightbox-ui").load("../mdb-addons/mdb-lightbox-ui.html");
+			});
+
+			$('.navbar-collapse a').click(function () {
+				$(".navbar-collapse").collapse('hide');
+			});
+		</script>
+
 </body>
 
 </html>

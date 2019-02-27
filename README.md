@@ -1,2 +1,4 @@
-# official-portfolio
-My official portfolio for jobs, freelance, etc. 
+# Offician Portfolio
+
+Portfolio made with Material Design Bootstrap with some help from MD Bootstrap 
+
