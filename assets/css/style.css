@@ -22,3 +22,9 @@ width: 100%
 .display-3 {
     font-family: 'Overpass', sans-serif;
 }
+.icon-area {
+    max-width: 165px;
+}
+.col-md-12 .card-body {
+    min-height: 205px;
+}
